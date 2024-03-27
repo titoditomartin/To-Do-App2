@@ -1,0 +1,96 @@
+.profile-page-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile-content {
+  text-align: center;
+}
+
+.profile-details {
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  object-fit: cover; /* Ensures the image covers the entire container */
+  border: 3px solid #ffffff; /* White border for better contrast */
+}
+
+.edit-profile-btn, .sign-out-btn {
+  margin: 10px;
+  padding: 12px 24px; /* Increased padding for better clickability */
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #3498db; /* Updated blue background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.edit-profile-btn:hover, .sign-out-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999; /* Ensure the overlay is on top of other elements */
+}
+
+.modal {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.profile-edit-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.profile-edit-form input[type="text"],
+.profile-edit-form input[type="number"],
+.profile-edit-form input[type="file"] {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #dddddd; /* Light gray border */
+  border-radius: 5px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/* Add these styles to the end of the existing CSS file */
+
+.edit-btn, .save-btn, .cancel-btn, .sign-out-btn {
+  margin: 10px;
+  padding: 12px 24px; /* Increased padding for better clickability */
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #3498db; /* Updated blue background color */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.edit-btn:hover, .save-btn:hover, .cancel-btn:hover, .sign-out-btn:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
